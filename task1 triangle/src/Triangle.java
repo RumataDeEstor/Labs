@@ -13,10 +13,10 @@ public class Triangle {
     }
     public void countHypo () {
 
-        this.hypo = Math.hypot(cath1,cath2);
+        hypo = Math.hypot(cath1,cath2);
     }
     public void countAngle () {
-        this.angle2 = Math.toDegrees((Math.atan(cath1 / cath2)));
-        this.angle3 = Math.toDegrees((Math.atan(cath2/cath1)));
+        angle2 = Math.toDegrees((Math.atan(cath1 / cath2)));
+        angle3 = Math.toDegrees((Math.atan(cath2/cath1)));
     }
 }

@@ -8,12 +8,12 @@ public class Square {
         this.perimeter = perimeter;
     }
     public void countSide () {
-        this.side = this.perimeter/4;
+        side = perimeter/4;
     }
     public void countArea () {
-        this.area = Math.pow(this.side, 2);
+        area = Math.pow(side, 2);
     }
     public void countDiagonal () {
-        this.diagonal = this.side*Math.sqrt(2);
+        diagonal = side*Math.sqrt(2);
     }
 }

@@ -3,21 +3,15 @@
  */
 public class Function {
 
-    double x;
-    Function() {};
-    Function(double x) {
-        this.x = x;
-    }
-
-    public void findY () {
-        if (x >= -9 && x <= 9) {
-            System.out.println("y=" + calculate());
+        public static void findY (double x) {
+                if (x >= -9 && x <= 9) {
+            System.out.println("y=" + calculate(x));
         } else {
             System.out.println("Incorrect x");
         }
     }
 
-    public double calculate () {
+    public static double calculate (double x) {
         double y;
         if (x >= 9 && x <= -6) {
             y = Math.sqrt(-Math.pow(x, 2) - 12 * x - 27);
@@ -27,9 +21,9 @@ public class Function {
             y = Math.sqrt(9 - Math.pow(x, 2));
         } else if (x > 0 && x <= 3) {
             y = -x + 3;
-        } else if (x > 3 && x <= 9) {
+        } else {
             y = 0.5 * x - 1.5;
-        } else y = 0; // exclusion; should never be used, needs in optimization;
+        }
         return y;
     }
 }

@@ -8,7 +8,6 @@ public class Main {
     public static void main (String args []) {
         Scanner scan = new Scanner(System.in);
         double x = scan.nextDouble();
-        Function myFunction = new Function (x);
-        myFunction.findY();
+        Function.findY(x);
     }
 }

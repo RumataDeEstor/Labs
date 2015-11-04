@@ -7,7 +7,10 @@ import java.lang.Math.*;
 public class Main {
     public static void main (String args []) {
         Scanner scan = new Scanner(System.in);
-        double x = scan.nextDouble();
-        Function.findY(x);
+        double xmin = scan.nextDouble();
+        double xmax = scan.nextDouble();
+        double dx = scan.nextDouble();
+        Function.findY(xmin, xmax, dx);
+
     }
 }

@@ -3,10 +3,16 @@
  */
 public class Function {
 
-        public static void findY (double x) {
-                if (x >= -9 && x <= 9) {
-            System.out.println("y=" + calculate(x));
-        } else {
+        public static void findY (double xmin, double xmax, double dx) {
+                if (xmin >= -9 && xmax <= 9 && xmin<xmax) {
+                    String str = "";
+                    String str2 = "";
+                    for (double x = xmin; x<=xmax; x+=dx) {
+                        str += " x="+x;
+                        str2 += " y="+calculate(x);
+                    }
+                System.out.println(str+"\n"+str2);
+                } else {
             System.out.println("Incorrect x");
         }
     }

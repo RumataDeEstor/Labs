@@ -18,8 +18,8 @@ public class Sector {
             return true;
         } else if ((Math.pow(pointX, 2)+Math.pow(pointY, 2) <= Math.pow(r, 2)) // rewrite
             && (pointX>=-xy && pointX<=0)
-            && (pointY>=0 && pointY<=-r)
-            && (pointY <= pointX)) {
+            && (pointY>=-r && pointY<=0)
+            && (pointY<= pointX)) {
             return true;
         } else {
             return false;

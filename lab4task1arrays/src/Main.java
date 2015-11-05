@@ -1,7 +1,7 @@
 /**
  * Created by User on 04.11.2015.
  */
-import java.lang.Math.*;
+//import java.lang.Math.*;
 import java.util.Scanner;
 
 public class Main {

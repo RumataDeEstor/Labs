@@ -5,12 +5,19 @@ public class Main {
     public static void main(String[] args) {
 
         int [] a = {1,2,3,4,5};
-        int [] b = new int [5];
+//        int [] b = new int [5];
+        double [] b = new double [5];
 
-        int n = 0;
+//        int n = 0;
+//        for (int i = 0; i <a.length; i++) {
+//            n += a[i];
+//            b[i] = n;
+//        }
+
+        double n = 0;
         for (int i = 0; i <a.length; i++) {
             n += a[i];
-            b[i] = n;
+            b[i] = n/(i+1);
         }
 
         for (int k = 0; k<b.length; k++) {
